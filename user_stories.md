@@ -1,4 +1,4 @@
-# User Story Template
+## User Story Template
 
 **Title:**
 _As a [user role], I want [feature/goal], so that [reason]._
@@ -14,7 +14,8 @@ _As a [user role], I want [feature/goal], so that [reason]._
 - [Additional information or edge cases]
 
 ---
-## User Stories
+
+## Admin User Stories
 
 ### User Story: Admin Login and Secure Platform Management
 
@@ -127,6 +128,8 @@ _As a [user role], I want [feature/goal], so that [reason]._
 - Documentation should be available for the stored procedure, including its name, parameters (if any), and expected output format.
 
 ---
+
+## Patient User Stories
 
 ### User Story: Patient View Doctor List (Pre-Login)
 
@@ -262,6 +265,8 @@ _As a [user role], I want [feature/goal], so that [reason]._
 - Clear indicators for any necessary pre-appointment preparations (e.g., bringing documents).
 
 ---
+
+## Doctor User Stories
 
 ### User Story: Doctor Login and Appointment Management
 
