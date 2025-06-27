@@ -125,3 +125,140 @@ _As a [user role], I want [feature/goal], so that [reason]._
 
 **Notes:**
 - Documentation should be available for the stored procedure, including its name, parameters (if any), and expected output format.
+
+---
+
+### User Story: Patient View Doctor List (Pre-Login)
+
+**Title:** Patient View Doctor List (Pre-Login)
+
+**As a patient**, I want to **view a list of doctors without logging in**, so that **I can explore options before registering.**
+
+**Acceptance Criteria:**
+1. The patient can access a public-facing section of the portal that displays doctor information.
+2. The list includes essential doctor details (e.g., name, specialization, possibly availability or a brief bio).
+3. The patient is not required to provide login credentials to view this information.
+4. The list is filterable and/or searchable by criteria such as specialization or name (optional but good for usability).
+
+**Priority:** High
+
+**Story Points:** 3
+
+**Notes:**
+- Ensure privacy compliance for any displayed doctor information.
+
+---
+
+### User Story: Patient Sign Up
+
+**Title:** Patient Sign Up
+
+**As a patient**, I want to **sign up using my email and password**, so that **I can book appointments.**
+
+**Acceptance Criteria:**
+1. The patient can access a dedicated registration page.
+2. The system prompts for a valid email address, password, and password confirmation.
+3. The system validates the input for email format and password strength requirements.
+4. Upon successful registration, a new patient account is created.
+5. The patient receives a confirmation of successful registration (e.g., an email verification link or immediate login).
+6. The patient is able to log in with the newly created credentials.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Implement email verification to ensure valid email addresses.
+- Define strong password policy requirements (e.g., minimum length, special characters).
+
+---
+
+### User Story: Patient Login and Booking Management
+
+**Title:** Patient Login and Booking Management
+
+**As a patient**, I want to **log into the portal**, so that **I can manage my bookings.**
+
+**Acceptance Criteria:**
+1. The patient can access the login page.
+2. The system authenticates the patient's email and password against registered credentials.
+3. Upon successful authentication, the patient is redirected to their personal dashboard or booking management section.
+4. Upon unsuccessful authentication (e.g., incorrect credentials), an error message is displayed, and the patient remains on the login page.
+5. The login process uses secure communication (e.g., HTTPS).
+
+**Priority:** High
+
+**Story Points:** 3
+
+**Notes:**
+- Ensure secure session management.
+
+---
+
+### User Story: Patient Logout
+
+**Title:** Patient Logout
+
+**As a patient**, I want to **log out of the portal**, so that **I can secure my account.**
+
+**Acceptance Criteria:**
+1. The patient can initiate a logout action from anywhere within their authenticated portal.
+2. Upon logout, the patient's session is terminated.
+3. The patient is redirected to the login page or a public landing page.
+4. Attempting to access previously authenticated pages after logout requires re-authentication.
+
+**Priority:** High
+
+**Story Points:** 1
+
+**Notes:**
+- A clear and easily accessible logout option should be present on all authenticated pages.
+- The system should confirm successful logout to the patient.
+
+---
+
+### User Story: Patient Book Hour-Long Appointment
+
+**Title:** Patient Book Hour-Long Appointment
+
+**As a patient**, I want to **log in and book an hour-long appointment to consult with a doctor**, so that **I can get medical advice.**
+
+**Acceptance Criteria:**
+1. The patient can access the appointment booking interface after logging in.
+2. The patient can select a doctor from the available list.
+3. The booking interface clearly shows available time slots for doctors.
+4. The patient can specify or select an appointment duration of one hour.
+5. The system confirms the appointment booking to the patient (e.g., on-screen message, email confirmation).
+6. The system updates the doctor's availability accordingly.
+
+**Priority:** High
+
+**Story Points:** 8
+
+**Notes:**
+- Integration with doctor's availability schedules is critical.
+- The system should prevent double-booking or booking unavailable slots.
+
+---
+
+### User Story: Patient View Upcoming Appointments
+
+**Title:** Patient View Upcoming Appointments
+
+**As a patient**, I want to **view my upcoming appointments**, so that **I can prepare accordingly.**
+
+**Acceptance Criteria:**
+1. The patient can access a dedicated section of the portal to view their appointments after logging in.
+2. The list clearly displays details for each upcoming appointment (e.g., doctor's name, date, time, duration).
+3. The list is organized chronologically.
+4. The patient can easily identify the status of each appointment (e.g., confirmed, pending).
+5. The patient has options to cancel or reschedule appointments (if allowed by system rules).
+
+**Priority:** Medium
+
+**Story Points:** 3
+
+**Notes:**
+- Clear indicators for any necessary pre-appointment preparations (e.g., bringing documents).
+
+
