@@ -261,4 +261,133 @@ _As a [user role], I want [feature/goal], so that [reason]._
 **Notes:**
 - Clear indicators for any necessary pre-appointment preparations (e.g., bringing documents).
 
+---
+
+### User Story: Doctor Login and Appointment Management
+
+**Title:** Doctor Login and Appointment Management
+
+**As a doctor**, I want to **log into the portal**, so that **I can manage my appointments.**
+
+**Acceptance Criteria:**
+1. The doctor can access the login page.
+2. The system authenticates the doctor's username and password against registered credentials.
+3. Upon successful authentication, the doctor is redirected to their appointment management dashboard.
+4. Upon unsuccessful authentication (e.g., incorrect credentials), an error message is displayed, and the doctor remains on the login page.
+
+**Priority:** High
+
+**Story Points:** 3
+
+**Notes:**
+- Ensure secure session management.
+
+---
+
+### User Story: Doctor Logout
+
+**Title:** Doctor Logout
+
+**As a doctor**, I want to **log out of the portal**, so that **I can protect my data.**
+
+**Acceptance Criteria:**
+1. The doctor can initiate a logout action from anywhere within their authenticated portal.
+2. Upon logout, the doctor's session is terminated.
+3. The doctor is redirected to the login page or a public landing page.
+4. Attempting to access previously authenticated pages after logout requires re-authentication.
+
+**Priority:** High
+
+**Story Points:** 1
+
+**Notes:**
+- A clear and easily accessible logout option should be present on all authenticated pages.
+- The system should confirm successful logout to the doctor.
+
+---
+
+### User Story: Doctor View Appointment Calendar
+
+**Title:** Doctor View Appointment Calendar
+
+**As a doctor**, I want to **view my appointment calendar**, so that **I can stay organized.**
+
+**Acceptance Criteria:**
+1. The doctor can access a calendar view showing their scheduled appointments.
+2. The calendar clearly displays appointment details (e.g., patient name, time, duration).
+3. The doctor can easily navigate between different dates.
+4. The calendar clearly distinguishes between confirmed and pending appointments.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Provide options to filter appointments (e.g., by type, status).
+
+---
+
+### User Story: Doctor Mark Unavailability
+
+**Title:** Doctor Mark Unavailability
+
+**As a doctor**, I want to **mark my unavailability**, so that **patients are only informed of available slots.**
+
+**Acceptance Criteria:**
+1. The doctor can access an interface to specify periods of unavailability (e.g., specific dates, recurring blocks of time).
+2. The system allows the doctor to provide a reason for unavailability (optional).
+3. Once marked unavailable, these slots are not shown as bookable to patients.
+4. The doctor can easily remove or modify marked unavailability.
+
+**Priority:** Medium
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure this feature integrates seamlessly with the patient booking process.
+
+---
+
+### User Story: Doctor Update Profile Information
+
+**Title:** Doctor Update Profile Information
+
+**As a doctor**, I want to **update my profile with specialization and contact information**, so that **patients have up-to-date information.**
+
+**Acceptance Criteria:**
+1. The doctor can access an interface to edit their profile details.
+2. The doctor can modify their specialization, contact information (e.g., phone, email), and possibly a brief bio or photo.
+3. The system validates the input data for correctness (e.g., email format).
+4. Upon successful submission, the updated information is reflected in their public profile.
+5. Patients viewing the doctor's profile see the latest information.
+
+**Priority:** Medium
+
+**Story Points:** 4
+
+**Notes:**
+- Clearly define which fields are editable by the doctor.
+- Ensure profile changes are immediately visible to patients.
+
+---
+
+### User Story: Doctor View Patient Details for Upcoming Appointments
+
+**Title:** Doctor View Patient Details for Upcoming Appointments
+
+**As a doctor**, I want to **view the patient details for upcoming appointments**, so that **I can be prepared.**
+
+**Acceptance Criteria:**
+1. The doctor can access patient details directly from their appointment calendar or a dedicated list of upcoming appointments.
+2. For each upcoming appointment, the system displays relevant patient information (e.g., patient name, contact details, reason for visit, medical history summary if available and permitted).
+3. The doctor can easily navigate between different patient profiles for their appointments.
+
+**Priority:** High
+
+**Story Points:** 6
+
+**Notes:**
+- Strict security and access controls are paramount for patient data.
+- Clearly define what patient information is accessible to the doctor and what requires additional consent or access levels.
+
 
