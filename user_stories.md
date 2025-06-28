@@ -187,7 +187,6 @@ _As a [user role], I want [feature/goal], so that [reason]._
 2. The system authenticates the patient's email and password against registered credentials.
 3. Upon successful authentication, the patient is redirected to their personal dashboard or booking management section.
 4. Upon unsuccessful authentication (e.g., incorrect credentials), an error message is displayed, and the patient remains on the login page.
-5. The login process uses secure communication (e.g., HTTPS).
 
 **Priority:** High
 
